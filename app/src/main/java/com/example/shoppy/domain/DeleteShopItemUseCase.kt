@@ -1,7 +1,8 @@
 package com.example.shoppy.domain
 
-class DeleteShopItemUseCase {
-    fun deleteShopItem(shopItem: ShopItem) {
+class DeleteShopItemUseCase(private val repository: ShopListRepository) {
 
+    fun deleteShopItem(shopItem: ShopItem) {
+        repository.deleteShopItem(shopItem)
     }
 }

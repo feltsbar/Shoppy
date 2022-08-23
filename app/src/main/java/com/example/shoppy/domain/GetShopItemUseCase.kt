@@ -1,7 +1,8 @@
 package com.example.shoppy.domain
 
-class GetShopItemUseCase {
+class GetShopItemUseCase(private val repository: ShopListRepository) {
+
     fun getShopItem(shopItemId : Int) : ShopItem {
-        TODO()
+        return repository.getShopItem(shopItemId)
     }
 }
