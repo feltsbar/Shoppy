@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Shoppy</string>
+    <string name="fab_add_shop_item_desc">Add new shop item</string>
 </resources>
